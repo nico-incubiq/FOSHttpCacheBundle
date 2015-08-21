@@ -315,11 +315,6 @@ class FOSHttpCacheExtension extends Extension
         if (!empty($config['rules'])) {
             $this->loadTagRules($container, $config['rules']);
         }
-
-        $tagsHeader = $config['header'];
-        $container->getDefinition($this->getAlias().'.cache_manager')
-            ->addMethodCall('setTagsHeader', array($tagsHeader))
-        ;
     }
 
     private function loadTest(ContainerBuilder $container, XmlFileLoader $loader, array $config)

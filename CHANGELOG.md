@@ -1,6 +1,16 @@
 Changelog
 =========
 
+2.0.0 (unreleased)
+------------------
+
+* Updated the version of FOSHttpCache to 2.*. See [FOSHttpCache changelog]
+  (https://github.com/FriendsOfSymfony/FOSHttpCache/blob/master/CHANGELOG.md).  
+  Most important, there is no more hard coupling on Guzzle HTTP client. We now
+  use the HTTP adapter. You now need to explicitly specify the adapter you 
+  want, see [installation instructions]
+  (http://foshttpcachebundle.readthedocs.org/en/stable/installation.html)
+
 1.3.2
 -----
 
